@@ -16,7 +16,7 @@ namespace Investigacion.Shared.Entities
 
         [Required(ErrorMessage = "La fecha es obligatoria")]
 
-        public DateTime FechaInicio { get; set; }
+        public string FechaInicio { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "El campo fidelizacion obligatorio")]
 

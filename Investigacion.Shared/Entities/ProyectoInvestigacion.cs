@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace Investigacion.Shared.Entities
 {
-    internal class ProyectoInvestigacion
+    public class ProyectoInvestigacion
     {
+        public int Id { get; set; } 
+
         [Required(ErrorMessage ="El nombre es obligatorio")]
         public string Nombre {  get; set; } = string.Empty;
 
@@ -16,15 +18,15 @@ namespace Investigacion.Shared.Entities
 
         public DateTime FechaInicio { get; set; }
 
-        [Required(ErrorMessage = "El nombre es obligatorio")]
+        [Required(ErrorMessage = "El campo fidelizacion obligatorio")]
 
         public string Fidelizacion { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "El nombre es obligatorio")]
+        [Required(ErrorMessage = "El lider del proyecto es obligatorio")]
 
         public string LiderProyecto {  get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "El nombre es obligatorio")]
+        [Required(ErrorMessage = "La descripcion es obligatoria")]
 
         public string Descripcion {  get; set; } = string.Empty;
 
